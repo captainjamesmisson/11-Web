@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>Latitudinal Weather Analysis</title>
 
-   <!-- CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
 
@@ -14,8 +14,8 @@
 </head>
 
 <body>
-
-<!-- Nav -->
+ 
+  <!-- Nav -->
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
@@ -31,7 +31,7 @@
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="temp.html">Max Temperature</a>
+              <a class="dropdown-item active" href="temp.html">Max Temperature</a>
               <a class="dropdown-item" href="humidity.html">Humidity</a>
               <a class="dropdown-item" href="clouds.html">Cloudiness</a>
               <a class="dropdown-item" href="wind.html">Wind Speed</a>
@@ -51,28 +51,25 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-12">
-        <div class="box">
-          <h3 class="title">Summary: Latitude vs. X</h3>
+        <div class="box" style="padding-bottom: 5px;">
+          <h3 class="title">Humidity</h3>
           <hr>
-          <img src="Fig1.png" class="vizualization rounded float-left" alt="Max Temperature Graph">
-          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-            accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
-            500 cities.</p>
-          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-            Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
-            source data and visualizations created as part of the analysis, as well as explanations and descriptions of
-            any trends and correlations witnessed.</p>
+          <img src="Fig2.png" alt="Humidity Graph">
+          <p>There is a very minor negative relationship between humidity and latitude.  Specifically, humidity shows a
+            slight tendency to decrease the farther north of the equator one travels.
+          </p>
         </div>
       </div>
       <div class="col-lg-5 col-md-12">
         <div class="box">
           <h5 class="title">Visualizations</h5>
           <hr>
+
           <div class="container">
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-6">
                 <a href="temp.html">
-                  <img class="panel" src="Fig1.png" alt="Max Temperature Image">
+                  <img class="panel active" src="Fig1.png" alt="Max Temperature Image">
                 </a>
               </div>
               <div class="col-6">
@@ -98,18 +95,18 @@
       </div>
     </div>
   </div>
- 
+  
   <footer>
     <div class="footer">Copyright &copy; Brandon Ferro 2019</div>
   </footer>
 
- <!-- Javascript -->
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
- crossorigin="anonymous"></script>
+<!-- Javascript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
- crossorigin="anonymous"></script>
+crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
- crossorigin="anonymous"></script>
+crossorigin="anonymous"></script>
 
 </body>
 
